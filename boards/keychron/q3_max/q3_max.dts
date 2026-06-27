@@ -100,6 +100,21 @@
         kscan = <&kscan0>;
         transform = <&default_transform>;
     };
+
+    sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&knob0>;
+        triggers-per-rotation = <20>;
+        status = "okay";
+    };
+
+    knob0: knob {
+        compatible = "alps,ec11";
+        a-gpios = <&gpiob 15 GPIO_ACTIVE_HIGH>;
+        b-gpios = <&gpiob 14 GPIO_ACTIVE_HIGH>;
+        steps = <80>;
+        status = "okay";
+    };
 };
 
 zephyr_udc0: &usbotg_fs {
