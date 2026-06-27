@@ -1,0 +1,6 @@
+if BOARD_Q3_MAX
+
+config ZMK_KEYBOARD_NAME
+    default "Keychron Q3 Max"
+
+endif
