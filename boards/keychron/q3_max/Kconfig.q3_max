@@ -1,0 +1,2 @@
+config BOARD_Q3_MAX
+    select SOC_STM32F401XC
