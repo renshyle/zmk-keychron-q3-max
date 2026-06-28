@@ -123,6 +123,33 @@ zephyr_udc0: &usbotg_fs {
     status = "okay";
 };
 
+&spi1 {
+    pinctrl-0 = <&spi1_sck_pa5 &spi1_miso_pa6 &spi1_mosi_pa7>;
+    pinctrl-names = "default";
+    status = "okay";
+    cs-gpios = <&gpiob 8 GPIO_ACTIVE_LOW &gpiob 9 GPIO_ACTIVE_LOW>;
+
+    rgb_matrix0: snled27351@0 {
+        compatible = "sonix,snled2735x-spi";
+        spi-max-frequency = <4000000>;
+        reg = <0>;
+        status = "okay";
+        cas = <16>;
+        cbs = <12>;
+        sdb-gpios = <&gpiob 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+    };
+
+    rgb_matrix1: snled27351@1 {
+        compatible = "sonix,snled2735x-spi";
+        spi-max-frequency = <4000000>;
+        reg = <1>;
+        status = "okay";
+        cas = <16>;
+        cbs = <12>;
+        sdb-gpios = <&gpiob 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+    };
+};
+
 &clk_lsi {
     status = "okay";
 };
