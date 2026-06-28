@@ -1,5 +1,6 @@
 name: zmk-keyboard-keychron-q3-max
 build:
+  cmake: .
   settings:
     board_root: .
     dts_root: .
