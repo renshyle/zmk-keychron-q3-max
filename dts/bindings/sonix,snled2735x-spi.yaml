@@ -1,0 +1,23 @@
+description: |
+  Bindings for the Sonix SNLED2735x series LED matrix controllers using SPI
+
+compatible: sonix,snled2735x-spi
+
+include: [spi-device.yaml]
+
+properties:
+  cas:
+    type: int
+    required: true
+    description: |
+      Number of CAx PWM pins
+  cbs:
+    type: int
+    required: true
+    description: |
+      Number of CBx sink pins
+  sdb-gpios:
+    type: phandle-array
+    required: true
+    description: |
+      The GPIO connected to the SDB pin

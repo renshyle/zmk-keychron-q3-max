@@ -2,3 +2,4 @@ name: zmk-keyboard-keychron-q3-max
 build:
   settings:
     board_root: .
+    dts_root: .
