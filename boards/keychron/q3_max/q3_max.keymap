@@ -13,7 +13,7 @@
                 &kp GRAVE        &kp N1        &kp N2       &kp N3 &kp N4 &kp N5 &kp N6    &kp N7 &kp N8 &kp N9    &kp N0        &kp MINUS        &kp EQUAL         &kp BACKSPACE     &kp INSERT      &kp HOME        &kp PAGE_UP
                 &kp TAB          &kp Q         &kp W        &kp E  &kp R  &kp T  &kp Y     &kp U  &kp I  &kp O     &kp P         &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp RETURN        &kp DELETE      &kp END         &kp PAGE_DOWN
                 &kp CAPSLOCK     &kp A         &kp S        &kp D  &kp F  &kp G  &kp H     &kp J  &kp K  &kp L     &kp SEMICOLON &kp SINGLE_QUOTE &kp NON_US_HASH   &none             &none           &none           &none
-                &kp LEFT_SHIFT   &kp BACKSLASH &kp Z        &kp X  &kp C  &kp V  &kp B     &kp N  &kp M  &kp COMMA &kp PERIOD    &kp SLASH        &none             &kp RIGHT_SHIFT   &none           &kp UP_ARROW    &none
+                &kp LEFT_SHIFT   &kp NUBS      &kp Z        &kp X  &kp C  &kp V  &kp B     &kp N  &kp M  &kp COMMA &kp PERIOD    &kp SLASH        &none             &kp RIGHT_SHIFT   &none           &kp UP_ARROW    &none
                 &kp LEFT_CONTROL &kp LEFT_GUI  &kp LEFT_ALT &none  &none  &none  &kp SPACE &none  &none  &none     &kp RIGHT_ALT &kp RIGHT_GUI    &mo 1             &kp RIGHT_CONTROL &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
         };
